@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mental Health Prediction</title>
+</head>
+<body>
+    <h2>Enter your details:</h2>
+    <form action="/predict" method="POST">
+        <label>Age:</label>
+        <input type="number" name="age" required><br><br>
+        
+        <label>Gender (0: Male, 1: Female, 2: Others):</label>
+        <input type="number" name="gender" required><br><br>
+        
+        <label>Family History (0 or 1):</label>
+        <input type="number" name="family_history" required><br><br>
+        
+        <!-- Add more fields as per your model -->
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
